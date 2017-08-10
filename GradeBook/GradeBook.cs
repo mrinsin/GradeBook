@@ -12,6 +12,7 @@ namespace Grades
 		}
 
 		public List<float> Grades;
+        public NameChangeDelegate NameChanged;
 
         string _name;
         public string Name
@@ -19,8 +20,15 @@ namespace Grades
             get { return _name; }
 			set
             {
+                //value is an implicit parameter that represents whatever the 
+                //person typed when seeting book.Name
                 if (!String.IsNullOrEmpty(value))
                 {
+                    if (_name != value)
+                    {
+                        //delegate method
+                        NameChanged(_name, value);
+                    }
                     _name = value;
                 }
             }
