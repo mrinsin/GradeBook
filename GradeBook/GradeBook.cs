@@ -9,6 +9,26 @@ namespace Grades
         public GradeBook()
         {
             Grades = new List<float>();
+		}
+
+		public List<float> Grades;
+
+        string _name;
+        public string Name
+        {
+            get { return _name; }
+			set
+            {
+                if (!String.IsNullOrEmpty(value))
+                {
+                    _name = value;
+                }
+            }
+		}
+
+        public void AddGrade(float grade)
+        {
+            Grades.Add(grade);
         }
 
         public GradeStatistics ComputeStatistics()
@@ -26,13 +46,5 @@ namespace Grades
             stats.AverageGrade = sum / Grades.Count;
             return stats;
         }
-
-        public void AddGrade(float grade)
-        {
-            Grades.Add(grade);
-        }
-
-        public List<float> Grades;
-
-    }
+	}
 }
