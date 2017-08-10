@@ -1,0 +1,38 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades", "GradeBook\Grades.csproj", "{691C0164-F194-4EB5-8D68-421D2CACE417}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{691C0164-F194-4EB5-8D68-421D2CACE417}.Debug|x86.ActiveCfg = Debug|x86
+		{691C0164-F194-4EB5-8D68-421D2CACE417}.Debug|x86.Build.0 = Debug|x86
+		{691C0164-F194-4EB5-8D68-421D2CACE417}.Release|x86.ActiveCfg = Release|x86
+		{691C0164-F194-4EB5-8D68-421D2CACE417}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.TextStylePolicy = $2
+		$2.FileWidth = 80
+		$2.TabsToSpaces = True
+		$2.scope = text/plain
+		$0.TextStylePolicy = $3
+		$3.inheritsSet = null
+		$3.scope = application/config+xml
+		$0.XmlFormattingPolicy = $4
+		$4.inheritsSet = null
+		$4.scope = application/config+xml
+		$0.TextStylePolicy = $5
+		$5.inheritsSet = null
+		$5.scope = application/xml
+		$0.XmlFormattingPolicy = $6
+		$6.scope = application/xml
+		$0.VersionControlPolicy = $7
+	EndGlobalSection
+EndGlobal
