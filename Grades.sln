@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades", "GradeBook\Grades.csproj", "{691C0164-F194-4EB5-8D68-421D2CACE417}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "Grades.UnitTests\UnitTests.csproj", "{849BD6D8-468F-4D36-9847-8EE4D5DC371F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{691C0164-F194-4EB5-8D68-421D2CACE417}.Debug|x86.Build.0 = Debug|x86
 		{691C0164-F194-4EB5-8D68-421D2CACE417}.Release|x86.ActiveCfg = Release|x86
 		{691C0164-F194-4EB5-8D68-421D2CACE417}.Release|x86.Build.0 = Release|x86
+		{849BD6D8-468F-4D36-9847-8EE4D5DC371F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{849BD6D8-468F-4D36-9847-8EE4D5DC371F}.Debug|x86.Build.0 = Debug|Any CPU
+		{849BD6D8-468F-4D36-9847-8EE4D5DC371F}.Release|x86.ActiveCfg = Release|Any CPU
+		{849BD6D8-468F-4D36-9847-8EE4D5DC371F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		Policies = $0
