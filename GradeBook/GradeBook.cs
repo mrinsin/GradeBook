@@ -12,7 +12,7 @@ namespace Grades
 		}
 
 		public List<float> Grades;
-        public NameChangeDelegate NameChanged;
+        public event NameChangeDelegate NameChanged;
 
         string _name;
         public string Name
@@ -26,8 +26,11 @@ namespace Grades
                 {
                     if (_name != value)
                     {
-                        //delegate method
-                        NameChanged(_name, value);
+                        NameChangedEventArgs args = new NameChangedEventArgs();
+                        args.ExistingName = _name;
+                        args.NewName = value;
+
+                        NameChanged(this, args);
                     }
                     _name = value;
                 }

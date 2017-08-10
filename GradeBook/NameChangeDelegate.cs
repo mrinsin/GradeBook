@@ -3,5 +3,5 @@ using System.Linq;
 
 namespace Grades
 {
-    public delegate void NameChangeDelegate(string existingName, string newName);
+    public delegate void NameChangeDelegate(object sender, NameChangedEventArgs args);
 }

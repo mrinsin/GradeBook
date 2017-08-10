@@ -4,13 +4,13 @@ namespace Grades
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             GradeBook book = new GradeBook();
-            book.NameChanged = new NameChangeDelegate(OnNameChanged);
-            book.NameChanged += new NameChangeDelegate(OnNameChanged2);
+            book.NameChanged += (OnNameChanged);
 
-            book.Name = "This is a test";
+
+			book.Name = "This is a test";
 			Console.WriteLine("___________________________________________");
 			Console.WriteLine("Enter a grade");
             var gradeOne = Console.ReadLine();
@@ -31,16 +31,11 @@ namespace Grades
 			WriteResults(book);
 		}
 
-        static void OnNameChanged(string existingName, string newName)
+        static void OnNameChanged(object sender, NameChangedEventArgs args)
         {
-            Console.WriteLine($"Gradebook changing names from {existingName} to {newName}");
+            Console.WriteLine($"Gradebook changing names from {args.ExistingName} to {args.NewName}");
             
         }
-
-		static void OnNameChanged2(string existingName, string newName)
-		{
-            Console.WriteLine("*****************");
-		}
 
         static void WriteResults(GradeBook book)
         {

@@ -44,6 +44,7 @@
     <Compile Include="GradeBook.cs" />
     <Compile Include="GradeStatistics.cs" />
     <Compile Include="NameChangeDelegate.cs" />
+    <Compile Include="NameChangedEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
