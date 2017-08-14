@@ -25,7 +25,8 @@ namespace Grades
 			book.AddGrade((Convert.ToInt32(gradeTwo)));
 			book.AddGrade((Convert.ToInt32(gradeThree)));
 			Console.WriteLine("___________________________________________");
-            book.Name = "Mrinalini's First grade book";
+            //book.Name = "Mrinalini's First grade book";
+            book.Name = null;
 
 
 			WriteResults(book);

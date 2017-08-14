@@ -18,24 +18,18 @@ namespace Grades
         public string Name
         {
             get { return _name; }
-			set
+            set
             {
-                //value is an implicit parameter that represents whatever the 
-                //person typed when seeting book.Name
-                if (!String.IsNullOrEmpty(value))
+                if (string.IsNullOrEmpty(value))
                 {
-                    if (_name != value)
-                    {
-                        NameChangedEventArgs args = new NameChangedEventArgs();
-                        args.ExistingName = _name;
-                        args.NewName = value;
-
-                        NameChanged(this, args);
-                    }
-                    _name = value;
+                    throw new ArgumentException();
                 }
+                if (_name != value)
+                {
+                }
+                _name = value;
             }
-		}
+        }
 
         public void AddGrade(float grade)
         {
